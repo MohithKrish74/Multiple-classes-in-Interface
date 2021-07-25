@@ -1,0 +1,62 @@
+package com.company;
+
+import com.sun.jdi.Value;
+import org.w3c.dom.ls.LSOutput;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+interface A
+{
+    public void show();
+    public void display();
+}
+
+class B implements A
+{
+    public void show()
+    {
+        System.out.println("This is interface show in class B");
+    }
+    public void display()
+    {
+        System.out.println("This is interface display in class B");
+    }
+}
+class C implements A
+{
+    public void show()
+    {
+        System.out.println("This is interface show in class C");
+    }
+    public void display()
+    {
+        System.out.println("This is interface display in class C");
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        B obj1 = new B();
+        C obj2 = new C();
+        System.out.println("Class B ");
+        obj1.show();
+        obj1.display();
+        System.out.println("-----------------------------------------");
+        System.out.println("Class C ");
+        obj2.show();
+        obj2.display();
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
